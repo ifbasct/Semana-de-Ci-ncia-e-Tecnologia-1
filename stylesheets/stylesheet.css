@@ -105,11 +105,11 @@ a {
     font-size: 1rem; } }
 
 .main-content :first-child {
+  padding-top: 70px;
   margin-top: 0; }
 .main-content img {
   max-width: 100%; }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  padding-top: 70px;
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
