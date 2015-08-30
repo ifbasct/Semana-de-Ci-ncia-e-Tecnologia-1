@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+  <link rel="stylesheet" href="stylesheets/gallery.prefixed.css">
+  <link rel="stylesheet" href="stylesheets/gallery.theme.css">
   <link href="https://fonts.googleapis.com/css?family=Play|Lobster|Ubuntu" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="http://semanact.mcti.gov.br/SNCT2015-theme/images/favicon.ico"/>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -22,6 +24,7 @@
 </head>
 
 <body>
+ <body>
   <header>
    <nav role = "navigation" class="navbar navbar-default">
     <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -29,9 +32,10 @@
        <li class="active"><a href="#" data-scroll-nav="0">Home</a></li>
        <li><a href="#about" data-scroll-nav="1">Sobre o Evento</a></li>
        <li><a href="#local" data-scroll-nav="2">Local</a></li>
-       <li><a href="#programacao" data-scroll-nav="3">Programação</a></li>
-       <li><a href="#location" data-scroll-nav="4">Inscreva sua Atividade </a></li> 
-       <li><a href="#location" data-scroll-nav="5">Inscreva-se para uma Atividade</a></li>    
+       <li><a href="#Novidades" data-scroll-nav="3"> Novidades do evento</a></li>
+       <li><a href="#programacao" data-scroll-nav="4">Programação</a></li>
+       <li><a href="#location" data-scroll-nav="5">Inscreva sua Atividade </a></li> 
+       <li><a href="#location" data-scroll-nav="6">Inscreva-se para uma Atividade</a></li>    
        <nav role = "navigation" class="navbar navbar-default navbar-fixed-top">
 
 
@@ -41,18 +45,41 @@
            <li><a href="#" data-scroll-nav="0" class="opcaoMenu">Home</a></li>
            <li><a href="#about" data-scroll-nav="1" class="opcaoMenu">Sobre o Evento</a></li>
            <li><a href="#local" data-scroll-nav="2" class="opcaoMenu">Local</a></li>
-           <li><a href="#programacao" data-scroll-nav="3" class="opcaoMenu">Programação</a></li>
-           <li><a href="#location" data-scroll-nav="4" class="opcaoMenu">Inscreva sua Atividade </a></li> 
-           <li><a href="#location" data-scroll-nav="5" class="opcaoMenu">Inscreva-se para uma Atividade</a></li> 
+           <li><a href="#Novidades" data-scroll-nav="3"class="opcaoMenu"> Novidades do evento</a></li>
+           <li><a href="#programacao" data-scroll-nav="4"class="opcaoMenu">Programação</a></li>
+           <li><a href="#location" data-scroll-nav="5"class="opcaoMenu">Inscreva sua Atividade </a></li> 
+           <li><a href="#location" data-scroll-nav="6"class="opcaoMenu">Inscreva-se para uma Atividade</a></li> 
          </ul>
        </div>
      </nav>
    </header>
 
    <section class="page-header">
-    <h1 class="project-name">Semana de Ciência e Tecnologia 2015</h1>
+   <div class="gallery autoplay items-3">
+    <div id="item-1" class="control-operator"></div>
+    <div id="item-2" class="control-operator"></div>
+    <div id="item-3" class="control-operator"></div>
+
+    <figure class="item">
+      <h1><h1 class="project-name">Semana de Ciência e Tecnologia 2015</h1>
     <h2 class="project-tagline">19, 20, e 21 de Outubro</h2>
-    <img src = "http://i.imgur.com/nCUU6JV.png" id="logo"/>
+    <img src = "http://i.imgur.com/nCUU6JV.png" id="logo"/></h1>
+    </figure>
+
+    <figure class="item">
+      <h1>Item 2</h1>
+    </figure>
+
+    <figure class="item">
+      <h1>Item 3</h1>
+    </figure>
+
+    <div class="controls">
+      <a href="#item-1" class="control-button">•</a>
+      <a href="#item-2" class="control-button">•</a>
+      <a href="#item-3" class="control-button">•</a>
+    </div>
+  </div>
   </section>
 
   <section class="main-content" data-scroll-index="1">
@@ -78,7 +105,20 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.215751354137!2d-38.295234799999996!3d-12.699336599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716425e2af376b1%3A0x5bbd2b6266ea62e7!2sIFBA+-+Instituto+Federal+De+Educa%C3%A7%C3%A3o%2C+Ci%C3%AAncia+E+Tecnologia+Da+Bahia!5e0!3m2!1spt-BR!2sbr!4v1440726426377" width="520" height="300" frameborder="0" style="position:relative; margin-bottom:5%;"></iframe>
 
         </section>
-        <section class="main-content" data-scroll-index="3">
+        
+      <section class="main-content" data-scroll-index="3">
+        <h3>
+      <a id="Novidades" class="anchor" href="#Novidades" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+      Novidades do evento
+    </h3>
+      <hr style="background-color: #099909;" />
+
+      <p>Novidades e atualizaçôes sobre o evento</p>
+
+    </section>
+
+
+        <section class="main-content" data-scroll-index="4">
           <h3>
 
             <a id="programacao" class="anchor" href="#programacao" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação</h3>
@@ -149,7 +189,7 @@
 
         <footer class="site-footer">
           <center>
-            <span class="site-footer-owner"><a href="https://github.com/Chiiip/Semana-de-Ci-ncia-e-Tecnologia">Semana de Ciência e Tecnologia 2015</a> was builded by <a href="https://github.com/filipe7788">Filipe Cruz</a>, Aluno do 1° Ano de TI do IFBA - <i>campus</i> Camaçari.</span>
+            <span class="site-footer-owner"><a href="https://github.com/Chiiip/Semana-de-Ci-ncia-e-Tecnologia">Semana de Ciência e Tecnologia 2015</a> was builded by <a href="https://github.com/filipe7788">Filipe Cruz</a>, Aluno do 1° Ano de TI do IFBA - <i>campus</i> Camaçari and <a href "https://github.com/Chiiip">Pedro Augusto</a>, Aluno do 3° Ano de TI do IFBA - <i>campus</i> Camaçari </span>  
 
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
             </center>
