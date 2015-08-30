@@ -1152,7 +1152,7 @@ hr {
 }
 .sr-only {
   position: absolute;
-  width: 1px;
+  width: 0px;
   height: 1px;
   padding: 0;
   margin: -1px;
@@ -3676,8 +3676,8 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .caret {
   content: "";
   border-top: 0;
-  border-bottom: 4px dashed;
-  border-bottom: 4px solid \9;
+  border-bottom: 3px dashed;
+  border-bottom: 3px solid \9;
 }
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {

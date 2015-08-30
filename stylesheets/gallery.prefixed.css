@@ -592,15 +592,15 @@
 }
 
 .items-5.autoplay .control-button {
-  -webkit-animation: controlAnimation-5 35s infinite;
+  -webkit-animation: controlAnimation-5 3s infinite;
   -o-animation: controlAnimation-5 35s infinite;
   animation: controlAnimation-5 35s infinite;
 }
 
 .items-5.autoplay .item {
-  -webkit-animation: galleryAnimation-5 35s infinite;
-  -o-animation: galleryAnimation-5 35s infinite;
-  animation: galleryAnimation-5 35s infinite;
+  -webkit-animation: galleryAnimation-5 3s infinite;
+  -o-animation: galleryAnimation-5 3s infinite;
+  animation: galleryAnimation-5 3s infinite;
 }
 
 .items-5 .control-button:nth-of-type(1),
