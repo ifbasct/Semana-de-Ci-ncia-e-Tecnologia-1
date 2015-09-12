@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>SNCT 2015 - IFBA Camaçari</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Teste de Envio via FormMail" />
+  <meta property="og:locale" content="pt_br" /> 
 
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -20,6 +22,18 @@
   <style type="text/css"> 
     #mapview{ visibility: hidden;}
     iframe { float: left; position: absolute; }
+
+    <script type="text/javascript">
+function hgsubmit() {
+if (/\S+/.test(document.hgmailer.nome.value) == false) alert ("Por favor, digite um nome.");
+else if (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false) alert ("Um endereço de e-mail válido é requerido.");
+else if (/\S+/.test(document.hgmailer.mensagem.value) == false) alert ("É necessário um conteúdo para mensagem.");
+else { 
+document.hgmailer.submit();
+alert ('Obrigado!\nSeu e-mail foi enviado com sucesso.');
+}
+}
+</script> - See more at: http://faq.hostgator.com.br/content/54/287/pt-br/criando-um-formul%C3%A1rio-para-seu-site.html#sthash.G5lycyVL.dpuf
   </style>
 </head>
 
@@ -177,18 +191,18 @@ O período de subsmissão das atividades é de 27/08 a 06/09 e deve ser realizad
       <a id="Contato" class="anchor" href= "#Contato" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         Contato</h3>
         <hr style="background-color: #099909;" />
-      <form name="formulario" action="#" method="post">
-<input type=hidden name="destino" value="filipe.cruz.ribeiro@gmail.com">
-<input type=hidden name="enviado" value="http://comissaosct.github.io/Semana-de-Ci-ncia-e-Tecnologia/#">
-<p><b>Nome:</b><br>
-<input type=text name="nome" size="45"></p><br>
-<p><b>Email:</b><br>
-<input type=text name="email" size="45"></p><br>
-<p><b>Assunto:</b><br>
-<input type=text name="assunto" size="45"></p><br>
-<p><b>Mensagem:</b><br>
-<textarea name="Mensagem" rows="10" cols="60" wrap="virtual"></textarea></p><br>
-<p><input type="submit" value="Enviar Email"> <input type="reset" value="Limpar Formulário"></p>
+      <form action="#" method="post" name="hgmailer">
+<input type="hidden" name="recipient" value="filipe.cruz.ribeiro@gmail.com">
+<input type="hidden" name="subject" value="FormMail E-Mail">
+Nome: <br>
+<input type="text" name="nome" size="40" value=""><br><br>
+E-Mail: <br>
+<input type="text" name="email" size="40" value=""><br><br>
+Mensagem: <br>
+<textarea name="mensagem" cols="52" rows="5"></textarea><br>
+<br>
+<input type="button" value="Enviar" onclick="hgsubmit();">
+<input type="hidden" name="redirect" value="http://comissaosct.github.io/Semana-de-Ci-ncia-e-Tecnologia/#"> 
 </form>
 
          <br/>
